@@ -1,5 +1,5 @@
 /*-------------------------------------
-		1.General css (Reset code)
+		1.General css (Resets)
 --------------------------------------*/
 *{
     padding: 0;
@@ -13,7 +13,8 @@
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
-body{
+
+body {
 	font-family: 'Poppins', sans-serif;
 	font-size:16px;
 	color: #676a81;
@@ -30,6 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Poppins', sans-serif;
 	text-transform: capitalize;
 }
+
 p {
 	margin: 0;
 	line-height:1.8;
@@ -37,31 +39,47 @@ p {
 	font-size:14px;
 	font-family: 'Poppins', sans-serif;
 }
+
 a:link, a:visited, a:hover, a:active {
     color: #b636ff;
     text-decoration: none;
 }
+
 a:hover {
     color: #d92cf9;
 }
 
-img{border:none;max-width:100%; height:auto;}
-ul{
+img {
+    border:none;
+    max-width:100%; 
+    height:auto;
+}
+
+ul {
 	padding: 0;
     margin: 0 auto;
     list-style: none;
 }
+
 ul li {
 	list-style: none;
-	
 }
-select,input,textarea,button{box-shadow:none;outline:0!important;}
-button {background: transparent;border: 0;}
+
+select,input,textarea,button{
+    box-shadow:none;
+    outline:0!important;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
 
 html,body{
     height: 100%;
 	position: relative;
 }
+
 [placeholder]:focus::-webkit-input-placeholder {
   -webkit-transition: opacity 0.3s 0.3s ease; 
   -moz-transition: opacity 0.3s 0.3s ease; 
@@ -71,11 +89,13 @@ html,body{
   opacity: 0;
 }
 
-.fix{position: relative;clear: both;}
-/*=============Style css=========*/
+.fix{
+    position: relative;
+    clear: both;
+}
 
 /*-------------------------------------
-        2. Header
+        Header
 --------------------------------------*/
 .top-area {
     position: relative;
@@ -94,7 +114,6 @@ nav.navbar {
     text-transform: uppercase;
 }
 
-/*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
     color: rgba(31,44,108,.99);
@@ -111,9 +130,9 @@ ul.navbar-nav > li > a:hover {
 }
 
 /*-------------------------------------
-        3.  Welcome-hero
+        Welcome-hero
 --------------------------------------*/
-.welcome-hero{
+.welcome-hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,9 +141,9 @@ ul.navbar-nav > li > a:hover {
     background-size:cover;
     background-position: center;
     height:690px;
-    /* height: 0; */
 }
-.welcome-hero:before{
+
+.welcome-hero:before {
     position:absolute;
     content: " ";
     top:0;
@@ -134,7 +153,6 @@ ul.navbar-nav > li > a:hover {
     height:100%;
 }
 
-/*.header-text-area*/
 .header-text {
     margin-top: 200px;
 }
@@ -146,7 +164,11 @@ ul.navbar-nav > li > a:hover {
     text-transform: uppercase;
     line-height: 1.5;
 }
-.header-text h2 span {color: #d92cf9;}
+
+.header-text h2 span { 
+    color: #d92cf9;
+}
+
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -155,6 +177,7 @@ ul.navbar-nav > li > a:hover {
     margin: 30px 0 60px;
     letter-spacing: 1px;
 }
+
 .header-text a {
     width: 200px;
     height: 60px;
@@ -171,15 +194,23 @@ ul.navbar-nav > li > a:hover {
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
-/*.header-text-area*/
 
+.header-text a:hover { 
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+    background:#9f00ff;
+    border: 1px solid #9f00ff;
+}
 
 /*-------------------------------------
-        6.  Skills
+        Skills
 --------------------------------------*/
-.skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
+.skill-content {
+    padding: 50px 0 80px;
+}
+
+.single-skill-content {
+    padding-top: 100px;
+}
 
 .skills .container {
     margin-top: 50px;
@@ -197,12 +228,12 @@ ul.navbar-nav > li > a:hover {
 
 
 /*-------------------------------------
-        5.  Coaching
+        Coaching
 --------------------------------------*/
 
 .offerings {
     background: #f9fbfd;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .offerings h3 { 
@@ -214,31 +245,40 @@ ul.navbar-nav > li > a:hover {
     background: #1f2c6c;
     padding: 16px;
 }
-.offerings table { border: 1px solid #636a82; }
+
+.offerings table { 
+    border: 1px solid #636a82; 
+}
+
 .offerings td {
     border: 1px solid #636a82;
     padding: 8px;
 }
+
 .offerings td.w-15 {
     width: 15% !important;
 }
 
 
 /*-------------------------------------
-        4.  About
+        About
 --------------------------------------*/
 .about {
     padding: 50px 0 100px;
     background: #f9fbfd;
 }
-.about-content {padding-top: 100px;}
-/*.single-about-txt*/
+
+.about-content {
+    padding-top: 100px;
+}
+
 .single-about-txt h3 {
     font-size:18px;
     color: #3c4258;
     text-transform: initial;
     line-height: 1.8;
 }
+
 .single-about-txt p {
     font-size: 16px;
     color: #636a82;
@@ -256,17 +296,25 @@ ul.navbar-nav > li > a:hover {
 .single-about-add-info {
     margin: 35px 0;
 }
+
 .single-about-add-info h3 {
     color: #636a82;
     font-size: 16px;
     text-transform: capitalize;
 }
-.single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
+
+.single-about-add-info p {
+    font-weight:  300;
+    border:  0;
+    padding: 0;
+    margin-top: 3px;
+}
 
 .single-about-img{
     position: relative;
     box-shadow: 0 5px 20px rgba(14,25,80,.30);
 }
+
 .single-about-img img {
     width: 100%;
     max-width: 500px;
@@ -282,7 +330,7 @@ ul.navbar-nav > li > a:hover {
 }
 
 /*-------------------------------------
-        7. Testimonials
+        Testimonials
 -------------------------------------*/
 
 #testimonials {
@@ -297,17 +345,14 @@ ul.navbar-nav > li > a:hover {
 }
 
 #testimonials .child {
-    flex: 1 0 21%; /* explanation below */
+    flex: 1 0 21%;
     margin: 5px;
-    height: 100px;
+    width: 100%;
+    height: 200px;
 }
 
-
-
-
-
 /*-------------------------------------
-        7. Background
+        Background
 -------------------------------------*/
 .background {
     padding: 50px 0 100px;
@@ -321,13 +366,16 @@ ul.navbar-nav > li > a:hover {
 }
 
 /*-------------------------------------
-        7. Mission
+        Mission
 -------------------------------------*/
 .mission {
     padding: 50px 0;
 }
 
-.hm-foot-icon ul li{float:left;}
+.hm-foot-icon ul li{
+    float:left;
+}
+
 .hm-foot-icon ul li>a {
     color: #636a82;
     margin-right:18px;
@@ -337,16 +385,21 @@ ul.navbar-nav > li > a:hover {
     -o-transition:.3s;
     transition: .3s;
 }
+
 .hm-foot-icon ul li>a:hover{
     color: #b636ff;
-}/*hm-foot-icon*/
+}
 
 .hm-footer-copyright p{
     color: #888ea5;
     text-transform: capitalize;
     padding: 38px 0;
 }
-.hm-footer-copyright p a {color: #888ea5;}
+
+.hm-footer-copyright p a {
+    color: #888ea5;
+}
+
 /*===============================
     Scroll Top
 ===============================*/
@@ -372,6 +425,7 @@ ul.navbar-nav > li > a:hover {
     transition: .5s;
 	z-index: 2;
 }
+
 #scroll-Top  .return-to-top:hover {
     background:#fff;
     color: #b636ff;
@@ -381,7 +435,6 @@ ul.navbar-nav > li > a:hover {
 #scroll-Top  .return-to-top i{
     position:relative;
     bottom:0;
-
 }
 
 #scroll-Top  .return-to-top i{
@@ -391,8 +444,8 @@ ul.navbar-nav > li > a:hover {
     animation-iteration-count: infinite;
     animation-duration:1s;
 }
+
 @keyframes example {
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
-/*========================Thank you=================
