@@ -174,10 +174,63 @@ ul.navbar-nav > li > a:hover {
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
 /*.header-text-area*/
 
+
+/*-------------------------------------
+        6.  Skills
+--------------------------------------*/
+.skill-content{padding: 50px 0 80px;}
+.single-skill-content{padding-top: 100px;}
+
+.skills .container {
+    margin-top: 50px;
+}
+
+.skills p {
+    font-size: 16px;
+    color: #636a82;
+}
+
+.skills blockquote {
+    margin-top: 60px;
+    font-style: italic;
+}
+
+
+/*-------------------------------------
+        5.  Coaching
+--------------------------------------*/
+
+.offerings {
+    background: #f9fbfd;
+    padding-top: 50px;
+}
+
+.offerings h3 { 
+    font-size: 18px;
+}
+
+.offerings th { 
+    color: #fff;
+    background: #1f2c6c;
+    padding: 16px;
+}
+.offerings table { border: 1px solid #636a82; }
+.offerings td {
+    border: 1px solid #636a82;
+    padding: 8px;
+}
+.offerings td.w-15 {
+    width: 15% !important;
+}
+
+
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
+.about {
+    padding: 50px 0 100px;
+    background: #f9fbfd;
+}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -228,49 +281,30 @@ ul.navbar-nav > li > a:hover {
     margin-bottom: 50px;
 }
 
-
 /*-------------------------------------
-        6.  Skills
---------------------------------------*/
-.skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
+        7. Testimonials
+-------------------------------------*/
 
-.skills .container {
-    margin-top: 50px;
+#testimonials {
+    padding: 50px 0 100px;
+    min-height: 350px;
 }
 
-.skills p {
-    font-size: 16px;
-    color: #636a82;
+#testimonials .parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#testimonials .child {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 100px;
 }
 
 
-/*-------------------------------------
-        5.  Coaching
---------------------------------------*/
 
-.offerings {
-    background: #f9fbfd;
-    padding-top: 50px;
-}
 
-.offerings h3 { 
-    font-size: 18px;
-}
-
-.offerings th { 
-    color: #fff;
-    background: #1f2c6c;
-    padding: 16px;
-}
-.offerings table { border: 1px solid #636a82; }
-.offerings td {
-    border: 1px solid #636a82;
-    padding: 8px;
-}
-.offerings td.w-15 {
-    width: 15% !important;
-}
 
 /*-------------------------------------
         7. Background
@@ -284,6 +318,13 @@ ul.navbar-nav > li > a:hover {
     font-size: 16px;
     color: #636a82;
     margin-top: 14px;
+}
+
+/*-------------------------------------
+        7. Mission
+-------------------------------------*/
+.mission {
+    padding: 50px 0;
 }
 
 .hm-foot-icon ul li{float:left;}
